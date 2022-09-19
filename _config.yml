@@ -1,0 +1,47 @@
+
+title: beatheat #Your awesome title
+email: beatheat888@gmail.com
+description: > # this means to ignore newlines until "baseurl"
+
+baseurl: # the subpath of the site
+url: https://beatheat.github.io/portfolio/ # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone: Asia/Seoul
+
+favicon: /assets/img/favicon.ico
+
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
+
+user:
+  name: beatheat
+  pic: /assets/img/logo2.png
+  picAlt: "오공방 그림"
+  # job: 
+  message: "<a style='color : #46a891;' href='https://github.com/beatheat'>깃헙</a>"
+  # aboutme: false # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
